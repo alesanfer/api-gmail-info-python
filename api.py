@@ -33,7 +33,7 @@ def buscaInfo():
 
         except Exception as inst:
             print(inst)
-            return {"error": "erro ao buscar informacoes do e-mail: " + email}
+            return {"error": True, "msg":"erro ao buscar informacoes do e-mail: " + email}
     else:
-        return {"error": "e-mail nao informado"}
+        return {"error":True, "msg":"e-mail nao informado"}
 run(host='localhost', port=8090, debug=True)
