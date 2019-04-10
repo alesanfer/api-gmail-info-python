@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
 
-@route('/info', method='POST')
+@route('/api/info', method='POST')
 def buscaInfo():
     email = request.json['email']
     senha = request.json['senha']
